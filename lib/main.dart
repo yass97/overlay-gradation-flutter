@@ -61,20 +61,15 @@ class _ImageListPageState extends State<_ImageListPage> {
             crossAxisCount: 3,
             children: _assets.map(_CardItem.new).toList(),
           ),
-          Stack(
-            alignment: AlignmentDirectional.topCenter,
-            children: [
-              Container(
-                foregroundDecoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [Colors.white.withOpacity(0.5), Colors.white],
-                    stops: const [0, 0.3],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                  ),
-                ),
+          Container(
+            foregroundDecoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.white.withOpacity(0.1), Colors.white],
+                stops: const [0, 0.3],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-            ],
+            ),
           ),
         ],
       ),
